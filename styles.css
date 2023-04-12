@@ -131,9 +131,11 @@ button {
       
       .pokemon-container {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        box-sizing: border-box;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        width: 33.3%;
         gap: 30px;
-        width: 80%;
+        width: 40%;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 40px;
